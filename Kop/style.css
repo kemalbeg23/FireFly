@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: overpass;
+}
+body{
+    background-color: crimson;
+}
+
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    height: 700px;
+    background-color: white;
+    border: 10px double crimson;
+    border-radius: 10px;
+    
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 50px;
+}
+.regHref, .nazad{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.form1, .form2{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px;
+}
+.form1, .form2{
+    display: none;
+    transition: ease 0.3s 0.1s;
+}
+form input{
+    font-size: 25px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+    transition: ease 0.2s 0.05s;
+}
+/* form input:hover{
+    border: 2px solid crimson;
+} */
+form input:focus {
+    outline: none;
+    border: 2px solid crimson;
+}
+form h1{
+    text-align: center;
+}
+form a{
+    color: crimson;
+    text-decoration: none;
+}
+button{
+    background-color: white;
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid crimson;
+    padding: 15px 20px;
+    transition: ease-in 0.15s 0.07s;
+}
+.Prijavi{
+    background-color: crimson;
+    color: white;
+    padding: 25px;
+    margin-bottom: 50px;
+    border: 5px solid crimson;
+}
+.Prijavi:hover{
+    background-color: white;
+    color: black;
+    
+    /* border: 10px double crimson; */
+}
+.glStr{
+    width: 100%;
+}
+.glStr:hover, .Prijava:hover, .prijaviSe:hover{
+    background-color: crimson;
+    color: white;
+}
+
+@media screen and (max-width: 570px) {
+    main {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 400px;
+        height: 600px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    main {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 350px;
+        height: 600px;
+    }
+
+    .Prijavi{
+        /* padding: 25px; */
+        margin-bottom: 25px;
+    }
+
+    form input {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    main {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 300px;
+        height: 500px;
+    }
+
+    button {
+        font-size: 18px;
+    }
+
+    .Prijavi {
+        padding: 15px;
+        margin-bottom: -25px;
+    }
+
+    .Prijava {
+        margin-bottom: -25px;
+    }
+
+    .prijaviSe {
+        margin-bottom: -25px;
+    }
+
+    .regHref {
+        font-size: 14px;
+    }
+
+    .form1 .nazad {
+        margin-top: -25px;
+    }
+
+    .form2 h1 {
+        display: flex;
+        justify-content: center;
+        margin-top: -25px;
+    }
+
+    .form2 input {
+        margin: -10px 0;
+    }
+}

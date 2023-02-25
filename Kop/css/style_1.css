@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: overpass;
+}
+body{
+    background-color: crimson;
+}
+
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    height: 700px;
+    background-color: white;
+    border: 10px double crimson;
+    border-radius: 10px;
+    
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 50px;
+}
+.regHref, .nazad{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.form1, .form2{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px;
+}
+.form1, .form2{
+    display: none;
+    transition: ease 0.3s 0.1s;
+}
+form input{
+    font-size: 25px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+    transition: ease 0.2s 0.05s;
+}
+form input:hover{
+    border: 2px solid crimson;
+}
+form input:focus {
+    outline: none;
+    border: 2px solid crimson;
+}
+form h1{
+    text-align: center;
+}
+form a{
+    color: crimson;
+    text-decoration: none;
+}
+button{
+    background-color: white;
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid crimson;
+    padding: 15px 20px;
+    transition: ease-in 0.15s 0.07s;
+}
+.Prijavi{
+    background-color: crimson;
+    color: white;
+    padding: 25px;
+    margin-bottom: 50px;
+    border: 10px solid crimson;
+}
+.Prijavi:hover{
+    background-color: white;
+    color: black;
+    
+    border: 10px double crimson;
+}
+.glStr{
+    width: 100%;
+}
+.glStr:hover, .Prijava:hover, .prijaviSe:hover{
+    background-color: crimson;
+    color: white;
+
+}
+view{
+    height: 100vh;
+    font-size: 18px;
+    background-color: white;
+    width: 1120px;
+    padding: 20px;
+    margin: 0 auto;
+    display: none;
+}
+.navigacija{
+    position: absolute;
+    z-index: 100;
+    bottom: 5vh;
+    left: 50vw;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transform: translateX(-50%);
+}
+.strelica{
+    font-size: 50px;
+    position: absolute;
+    top: 50vh;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.strelica svg{
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.lijevo{
+    left: 3vw;
+}
+.desno{
+    right: 3vw;
+}
+.navigacija input{
+    width: 20px;
+    height: 20px;
+}
